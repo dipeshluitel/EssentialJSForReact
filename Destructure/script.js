@@ -157,7 +157,7 @@ const book = getBook(2);
 const { author, title, genres, pages } = book
 // console.log(typeof book)
 // console.log(typeof author)
-console.log(title, author, genres)
+console.log(title, author, genres, pages)
 
 // const primaryGenre = genres[0]
 // const secondaryGenre = genres[1]
@@ -173,12 +173,14 @@ console.log(primaryGenre, secondaryGenre, others)
 const newGenres = [...genres, "Anime"]
 newGenres
 
-const updatedBook = { ...book, movie_released: '2019-01-03', title: "Updated", pasges: 400 }
-updatedBook
-
+const updatedBook = { ...book, movie_released: '2019-01-03', title: "Updated", pages: 2033 }
+console.log(book)
 
 
 // Using Template Literals
 // `${varaible_here}`
 const summary = `${title} is a book, with ${pages} and published by ${author}`
 summary
+
+const page_status = pages > 200 ? 'The page is over 200' : 'The page is less than 200'
+page_status
