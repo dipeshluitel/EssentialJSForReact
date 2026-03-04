@@ -182,5 +182,7 @@ console.log(book)
 const summary = `${title} is a book, with ${pages} and published by ${author}`
 summary
 
+
+// using Ternaries Operators
 const page_status = pages > 200 ? 'The page is over 200' : 'The page is less than 200'
 page_status
