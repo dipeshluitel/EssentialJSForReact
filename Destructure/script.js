@@ -154,7 +154,7 @@ const book = getBook(2);
 
 // Destructuring Code
 
-const { author, title, genres } = book
+const { author, title, genres, pages } = book
 // console.log(typeof book)
 // console.log(typeof author)
 console.log(title, author, genres)
@@ -173,5 +173,12 @@ console.log(primaryGenre, secondaryGenre, others)
 const newGenres = [...genres, "Anime"]
 newGenres
 
-const updatedBook = { ...book, movie_released: '2019-01-03', title: "Updated" }
+const updatedBook = { ...book, movie_released: '2019-01-03', title: "Updated", pasges: 400 }
 updatedBook
+
+
+
+// Using Template Literals
+// `${varaible_here}`
+const summary = `${title} is a book, with ${pages} and published by ${author}`
+summary
