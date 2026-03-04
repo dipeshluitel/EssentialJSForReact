@@ -163,5 +163,7 @@ console.log(title, author, genres)
 // const secondaryGenre = genres[1]
 
 // Array Destructuring
-const [primaryGenre, secondaryGenre] = genres
-console.log(primaryGenre, secondaryGenre)
+const [primaryGenre, secondaryGenre, ...others] = genres
+console.log(primaryGenre, secondaryGenre, others)
+
+// ( ...VAR_NAME ) is used to get rest of the array items and store as list into the VAR_NAME
