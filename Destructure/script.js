@@ -167,3 +167,11 @@ const [primaryGenre, secondaryGenre, ...others] = genres
 console.log(primaryGenre, secondaryGenre, others)
 
 // ( ...VAR_NAME ) is used to get rest of the array items and store as list into the VAR_NAME
+
+
+// we create new array with Spread Operator (...)
+const newGenres = [...genres, "Anime"]
+newGenres
+
+const updatedBook = { ...book, movie_released: '2019-01-03', title: "Updated" }
+updatedBook
