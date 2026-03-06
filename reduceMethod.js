@@ -137,6 +137,7 @@ const data = [
 
 
 // using reduce method to count total number of pages from all books
+// Basically reduce method is used to boild down data loads to single value
 
 const all_pages = data.reduce((acc, book) => acc + book.pages, 0);
 all_pages;
