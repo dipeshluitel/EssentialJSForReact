@@ -147,3 +147,16 @@ x_even = x_odd.map((x_odd) => x_odd * 2)
 x_even
 
 
+//Using Array Map on books array
+
+const titles = books.map((book) => book.title)
+
+titles
+
+const essentialData = books.map((book) => ({
+    title: book.title,
+    author: book.author
+}
+));
+
+essentialData
